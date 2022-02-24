@@ -1,0 +1,20 @@
+
+L
+java:S1854"6Remove this useless assignment to local variable "id".(º¨—
+M	java:S106"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+=
+java:S1481"'Remove this unused "id" local variable.(º¨—
+X
+java:S1854"BRemove this useless assignment to local variable "sampleConsumer".(±ò º
+’
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(”¹„Ìıÿÿÿÿ
+I
+java:S1481"3Remove this unused "sampleConsumer" local variable.(±ò º
+Y
+java:S1854"CRemove this useless assignment to local variable "sampleConsumer1".(ãŠ¨
+’
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(¥¨ë¾üÿÿÿÿ
+J
+java:S1481"4Remove this unused "sampleConsumer1" local variable.(ãŠ¨
+P
+java:S1128"5Remove this unused import 'java.nio.charset.Charset'.(ü¶ØŸıÿÿÿÿ

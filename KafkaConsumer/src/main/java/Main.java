@@ -10,7 +10,7 @@ public class Main {
         }
         System.out.println(str);
         String id = String.valueOf(str);
-        singleConsumerGroup(id);
+        singleConsumer("deneme");
     }
 
     public static void singleConsumer(String groupId) throws InterruptedException {
@@ -18,39 +18,7 @@ public class Main {
     }
 
     public static void singleConsumerGroup(String groupId) throws InterruptedException {
-        Thread t1 = new Thread() {
-            @Override
-            public void run() {
-                SampleConsumer sampleConsumer1 = new SampleConsumer("Consumer1", groupId);
-            }
-        };
-
-        Thread t2 = new Thread() {
-            @Override
-            public void run() {
-                SampleConsumer sampleConsumer2 = new SampleConsumer("Consumer2", groupId);
-            }
-        };
-
-
-        Thread t3 = new Thread() {
-            @Override
-            public void run() {
-                SampleConsumer sampleConsumer3 = new SampleConsumer("Consumer3", groupId);
-            }
-        };
-
-        Thread t4 = new Thread() {
-            @Override
-            public void run() {
-                SampleConsumer sampleConsumer4 = new SampleConsumer("Consumer4", groupId);
-            }
-        };
-
-        t1.start();
-        t2.start();
-        t3.start();
-        t4.start();
+        SampleConsumer sampleConsumer1 = new SampleConsumer("Consumer1", groupId);
 
     }
 }
